@@ -55,23 +55,6 @@ git commit -m init
 
 #### QA
 
-You may find you eslint lint tell you `Parsing error: '>' expected.`
+##### [Parsing error: '>' expected.](./forget/eslint-parsing-error/eslint-parsing-error.md)
 
-![eslint-error](./readme-images/eslint-error.png)
-
-Just modifiy you `eslint.cjs` file like this:
-
-```javascript
-module.exports = {
-  // ...
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    // ...
-    parser: '@typescript-eslint/parser',
-    // ...
-  },
-  // ...
-}
-```
-
-Then everything will be fine
+##### [Cannot Jump to Vue file in typescript file](./forget/ts-lsp-setting/ts-lsp-setting.md)
