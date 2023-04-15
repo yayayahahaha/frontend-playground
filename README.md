@@ -53,6 +53,16 @@ git add :/
 git commit -m init
 ```
 
+And if you want to create `.gitignore` file automatically, use [`create-gitignore`](https://www.npmjs.com/package/create-gitignore) npm package to help you
+
+```bash
+pnpm install create-gitignore --save-dev
+npx create-gitignore list # This command will list all common .gitignore types to use.
+npx create-gitignore Node
+# npx create-gitignore macOS # `macOS` is in the list, but it cannot be use...
+# We can add .DS_Store to the .gitignore file by ourselves
+```
+
 #### QA
 
 ##### [Parsing error: '>' expected.](./forget/eslint-parsing-error/eslint-parsing-error.md)
