@@ -1,0 +1,11 @@
+
+
+
+HINT
+透過 tweak 處理 HAR -> importable file?
+
+如果要 random 的話，用 content-type: application/javascript
+然後把 response 當作一個 function, 最後在 .then 的時候用 new Function(express)() 後再一個 .then 就可以處理。
+可以讀到 window, 所以可以用這種方式取到 route 裡的 param 或 queryString
+
+
